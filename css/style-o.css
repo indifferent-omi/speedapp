@@ -1,5 +1,5 @@
 .select2-container--default .select2-selection--single {
-  background-color: #1f201f;
+  background-image: #1f201f;
   color: #a0a0a0;
   border: 0;
 }
@@ -38,7 +38,8 @@
 
 @media (max-width: 1360px) {
   #hautbas {
-    background: #272727;
+    background-image: url(../img/design/download-mobile.png);
+    background-repeat: repeat;
     height: 140px;
   }
   #hautbas #haut {
