@@ -1,0 +1,35 @@
+.popup {
+  width: 790px;
+  height: 300px;
+  background-color: white;
+  border: 1px solid grey;
+}
+
+.popup img {
+  float: left;
+}
+
+.popup_content {
+  font-family: 'Titillium Web', sans-serif;
+  position: absolute;
+  width: 490px;
+  text-align: center;
+  margin-left: 260px;
+/*  margin-top: 60px;*/
+}
+
+/*.popup_content input.form-control {
+  margin-top: 10px;
+}*/
+
+.popup_content input.form-control[type="email"] {
+  width: 270px;
+  height: 40px;
+}
+
+.popup_content button[type="submit"] {
+  width: 120px;
+  height: 40px;
+  background-color: #9f1916;
+  border: 0px;
+}

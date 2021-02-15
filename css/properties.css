@@ -1,0 +1,324 @@
+/* 
+    Document   : properties
+    Created on : 24 avr. 2014, 15:34:59
+    Author     : china
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* custom inclusion of right, left and below tabs */
+#swapp-palettes {
+    width: 232px;
+    height: 100%;
+    padding: 10px;
+}
+
+#swapp-palettes ul.nav-tabs {
+    width: 23px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.nav > li > a {
+    padding: 10px;
+}
+
+.tabs-right > .tab-content {
+    width: 200px;
+    padding-left: 10px;
+}
+.tabs-right > .tab-content div.control-group {
+    margin-bottom: 15px;
+}
+.tabs-right > .tab-content,.modal-body {
+    font-size: 11px;
+}
+
+
+.tabs-right > .tab-content div span{
+    margin-right: 10px
+}
+
+.tabs-right > .nav-tabs{
+    border-bottom: 0;
+}
+.tab-content > .tab-pane,
+.pill-content > .pill-pane {
+    display: none;
+}
+
+.tab-content > .active,
+.pill-content > .active {
+    display: block;
+}
+
+.tabs-right > .nav-tabs > li {
+    float: none;
+}
+
+
+#swapp-palettes, .tabs-right{
+    height: 100%
+}
+
+.tabs-right > .nav-tabs {
+    float: right;
+    margin-left: 10px;
+    border-left: 1px solid #ddd;
+}
+.tabs-right ul.nav{
+    background-image:url('../img/design/bg-pano_03.png');
+    border: none;
+    height: 94.7%;
+    margin-right: -21px;
+    padding-top: 49px;
+}
+
+.tabs-right > .nav-tabs > li > a {
+    border-radius: 0;
+    margin-left: -1px;
+    margin-bottom: 0;
+    margin-right: 0;
+    min-width: 23px;
+}
+
+.tabs-right .nav-tabs > li a{
+    border-bottom: 1px solid #464646; 
+    color: #858585;
+    font-size: 13px;
+    height: 35px;
+}
+.tabs-right .nav-tabs > li.active > a , .tabs-right .nav-tabs > li.active > a:focus {
+    background-color: #2F2F2F;
+    background-image: url("../img/design/pano-hover.png");
+    background-repeat: no-repeat;
+    border: none;
+    color: #555555;
+    cursor: default;
+    height: 35px;
+}
+.tabs-right .nav-tabs > li > a:hover, .tabs-right  .nav-tabs > li.active > a:hover {
+    background:none;
+    border: none;
+    height: 35px;
+}
+.tabs-right  .nav-tabs > li:hover{
+
+}
+/*modal bordure*/
+.modal-body div input[type="number"]{
+    padding-right: 0px;
+    width: 40px;
+} 
+.modal-body >.taillelabel, .modal-body > .taille{
+    display: inline-block;
+}
+
+.propertiesdialog .control-group label{
+    width: 120px;
+}
+
+.propertiesdialog .modal-body input[type="text"]{
+    width: 60px   
+}
+.propertiesdialog .modal-body .input-group-addon{
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    margin-left: -18px;
+}
+.propertiesdialog .modal-body input[type="radio"] {
+    margin-left: 43px;
+    width: 60px;
+}
+
+.propertiesdialog .input-group-addon, .propertiesdialog .input-group-btn {
+    width:auto !important;
+}
+
+#swapp-properties .control-group .controls{
+    text-align: center;
+}
+#swapp-properties .control-group .controls button {
+    text-transform: uppercase;
+    width: 170px;
+}
+
+#swapp-properties .panel-heading {
+    margin-bottom: 0px;
+}
+
+#swapp-properties .panel-heading:hover {
+    cursor: pointer;
+}
+
+#swapp-properties .nano-content {
+    outline:none !important;
+}
+
+.properties-symbol-container, .properties-block-container {
+    height: auto!important;
+    margin-bottom: 10px;
+}
+
+/* Navigator style */
+div#swapp-navigation > div.properties-navigation-container {
+    padding: 0px; 
+}
+
+.treeview li.list-group-item, li.history-action {
+    padding: 5px 10px 0 5px;
+}
+
+li.history-action {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #444;
+}
+
+div#swapp-navigation .treeview span.icon {
+    margin-right: 5px;
+}
+
+div#swapp-navigation .treeview span.check-icon {
+    float: right !important;
+}
+
+ul.tagit {
+    border-color: #767676 !important;     
+}
+
+.properties-container, .properties-navigation-container, #swapp-history div.body {
+    margin-top: 15px;
+}
+
+.properties-container .control-group label, .properties-container .control-group .controls{
+    vertical-align: middle;
+    display: inline;
+    line-height: 27px;
+}
+.properties-container .control-group label {
+    width: 100%;
+}
+
+#swapp-properties .control-group .controls ul {
+  width: 170px;
+}
+
+#swapp-properties .control-group .controls  ul[role ="option"]{
+    width: auto;
+}
+
+#swapp-properties img {
+    width: 140px;
+    height: 80px;
+}
+
+#swapp-properties .optionlist a, #swapp-properties .image a {
+    width: 70px;
+    height: 25px;
+    padding: 2px 12px;
+}
+
+#swapp-properties .image a {
+    width: 140px;
+}
+
+#swapp-properties .optionlist .btn-group,
+#swapp-properties .image .btn-group {
+    width: 140px;
+    margin: 0;
+    padding: 0;
+}
+
+#swapp-properties .optionlist .control-group {
+    margin: 20px 0px;
+}
+
+#swapp-properties .optionlist .btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle),
+#swapp-properties .optionlist .btn-group > .btn:last-child:not(:first-child),
+#swapp-properties .image .btn-group > .btn {
+    border-radius: 0;
+}
+
+#swapp-properties .optionlist button i {
+    color: red;
+}
+
+#swapp-properties .optionlist button {
+    width: 140px;
+    height: 30px;
+    background-image: none;
+    background-color: white;
+}
+
+.orange-i {
+    color:#F0AD4E;
+    font-size: 16px;
+}
+
+.dialog-tab .modal-footer-checkbox label {
+    width: 100%!important;
+}
+
+div.swapp-effect, div.swapp-history  {
+    height: 450px;
+}
+
+#swapp-effect div.control-group{
+    margin: 0px;
+}
+
+#swapp-effect ul li div.control-group:nth-child(1) .controls{
+    height: 24px;
+}
+
+#swapp-effect ul li div.control-group:nth-child(2), #swapp-effect ul li div.control-group:nth-child(2) .controls {
+    display: inline;
+}
+
+#swapp-effect ul li div.control-group .controls .bfh-selectbox{
+    width: 100%;
+    text-align: center;
+}
+
+#swapp-effect span.btn {
+    width: 50%;
+    padding: 2px 12px;
+    margin: 0px;
+    border-radius: 0px;
+}
+
+#swapp-effect .add i {
+    color: red;
+}
+
+#swapp-effect .add {
+    width: 100%;
+    height: 30px;
+    margin: 3px 0px;
+    border-radius: 0px;
+    background-image: none;
+    background-color: white;
+}
+
+.iconpicker-popover {
+    width: 600px!important;
+}
+
+#icontext .body {
+    display: table;
+}
+
+#icontext .body > * {
+    display: table-cell;
+}
+#icontext .body {
+    display: table;
+}
+
+#icontext .body > * {
+    display: table-cell;
+}

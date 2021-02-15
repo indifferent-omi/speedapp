@@ -1,0 +1,47 @@
+ul.thumbnails.image_picker_selector {
+    overflow: auto;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+ul.thumbnails.image_picker_selector li.group_title {
+    float: none;
+}
+ul.thumbnails.image_picker_selector li {
+    margin: 0px 10px 10px 0px;
+    float: left;
+}
+ul.thumbnails.image_picker_selector li .thumbnail {
+    padding: 6px;
+    border: 1px solid #dddddd;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+ul.thumbnails.image_picker_selector li .thumbnail img {
+    -webkit-user-drag: none;
+}
+ul.thumbnails.image_picker_selector li .thumbnail.selected {
+    background: #0088cc;
+}
+ul.thumbnails.image_picker_selector p {
+    text-overflow: ellipsis;
+    /* Required for text-overflow to do anything */
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100px;
+}
+
+.bfh-imagepicker .bfh-colorpicker-popover {
+    left: 120px;
+    top: 0;
+}
+
+.bfh-colorpicker-popover .pagination,
+.bfh-imagepicker-palette nav ul.pagination {
+    margin: 0px !important;
+}
