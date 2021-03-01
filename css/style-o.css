@@ -61,14 +61,6 @@
           order: 1;
 }
 
-#hautbas #haut #navbarmenu {
-  -webkit-box-ordinal-group: 6;
-      -ms-flex-order: 5;
-          order: 5;
-  z-index: 999;
-  position: relative;
-}
-
 #hautbas #haut #navbar {
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
@@ -760,5 +752,10 @@ html #entete #bas #shortcut-icon {
 #entete, #hautbas {
   position: relative;
   z-index: 100;
+}
+
+#navbarmenu {
+  z-index: 999;
+  position: relative;
 }
 /*# sourceMappingURL=style-o.css.map */
