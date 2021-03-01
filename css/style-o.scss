@@ -662,7 +662,7 @@ p,span{
         @media(min-width:588px){
             transform: translateY(40%);
         }
-        @media(min-width:853px){
+        @media(min-width:800px){
             transform:  translateY(71%);
         }
     }
@@ -776,5 +776,15 @@ p,span{
         >div{
             height: 100%!important;
         }
+    }
+}
+
+
+// Right Pannel
+
+.tabs-right>.tab-content{
+    height: 100%;
+    .nano>.nano-content{
+        height: 100%!important;
     }
 }

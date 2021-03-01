@@ -730,7 +730,7 @@ html #entete #bas #shortcut-icon {
   }
 }
 
-@media (min-width: 853px) {
+@media (min-width: 800px) {
   .subnav .subnav-content {
     -webkit-transform: translateY(71%);
             transform: translateY(71%);
@@ -841,6 +841,14 @@ html #entete #bas #shortcut-icon {
 }
 
 #fp_thumbContainer .selectorcontainer .container > div {
+  height: 100% !important;
+}
+
+.tabs-right > .tab-content {
+  height: 100%;
+}
+
+.tabs-right > .tab-content .nano > .nano-content {
   height: 100% !important;
 }
 /*# sourceMappingURL=style-o.css.map */
