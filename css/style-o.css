@@ -827,8 +827,8 @@ html #entete #bas #shortcut-icon {
 }
 
 #fp_thumbContainer {
-  height: 100% !important;
-  top: 0;
+  height: calc(100% - 65px) !important;
+  top: 65px;
 }
 
 #fp_thumbContainer #fp_thumbScroller {
