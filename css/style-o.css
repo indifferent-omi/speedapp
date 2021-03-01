@@ -353,6 +353,12 @@ html #entete #bas #shortcut-icon {
 
 .media-select-wrapper li {
   list-style: none;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.media-select-wrapper li:hover {
+  background: #c5c5c5;
 }
 
 .media-select-wrapper .media-select {
@@ -427,7 +433,8 @@ html #entete #bas #shortcut-icon {
 
 .media-select-wrapper .select-dropdown-wrapper ul li {
   color: #000;
-  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   cursor: pointer;
 }
 
@@ -784,7 +791,11 @@ html #entete #bas #shortcut-icon {
   color: #494d49;
 }
 
+.font-picker-control .fs-results li.active {
+  background: #cc060a;
+}
+
 .font-picker-control .fs-results li:hover {
-  background: #c5c5c5;
+  background: #cc060a;
 }
 /*# sourceMappingURL=style-o.css.map */

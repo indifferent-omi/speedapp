@@ -356,6 +356,10 @@ margin-top: 0!important;
 .media-select-wrapper{
     li{
     list-style: none;
+    transition: .4s;
+    &:hover{
+        background: #c5c5c5;
+    }
     }
     .media-select{
         position: relative;
@@ -414,7 +418,9 @@ margin-top: 0!important;
             text-align: center;
             li{
                 color: #000;
-                margin-bottom: 10px;
+                // margin-bottom: 10px;
+                padding-top: 5px;
+                padding-bottom: 5px;
                 cursor: pointer;
             }
         }
@@ -716,8 +722,12 @@ p,span{
         background: #e8e8e8;
        li{
            color: #494d49;
+           &.active{
+               background: #cc060a;
+           }
         &:hover{
-            background: #c5c5c5;
+            // background: #c5c5c5;
+            background: #cc060a;
         }
        }
     }
