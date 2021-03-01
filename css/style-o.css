@@ -702,9 +702,9 @@ html #entete #bas #shortcut-icon {
 }
 
 .subnav .subnav-content {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-transform: translateY(28%);
           transform: translateY(28%);
 }

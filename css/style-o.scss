@@ -644,7 +644,7 @@ p,span{
 
 .subnav{
     .subnav-content{
-        justify-content: center;
+        justify-content: flex-end;
         transform: translateY(28%);
         @media(min-width:588px){
             transform: translateY(40%);
