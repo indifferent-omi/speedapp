@@ -161,5 +161,11 @@ window.addEventListener('click', function(e){
      document.getElementById('device-select-inner').style.display ="none" //the same code you've used to hide the menu
   } 
 })
+window.addEventListener('click', function(e){
+    if (!document.getElementById('device-select').contains(e.target)){
+     document.getElementById('device-select-inner').classList.remove("show") //the same code you've used to hide the menu
+     document.getElementById('device-select-inner').style.display ="none" //the same code you've used to hide the menu
+  } 
+})
 
 

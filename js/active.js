@@ -131,12 +131,24 @@ $('.media-select .select-dropdown-wrapper li').click(function(){
   // $('.media-select .btn-select').attr('value', value);
   $(".select-dropdown-wrapper").toggle();
   $(".select-dropdown-wrapper").toggleClass("show");
+  if($(".subnav-1").hasClass("show")){
+    $(".subnav-1").removeClass("show")
+}
+if($(".subnav").hasClass("show")){
+  $(".subnav").removeClass("show")
+}
   //console.log(value);
 });
 
 $(".btn-select").click(function(){
         $(".select-dropdown-wrapper").toggle();
         $(".select-dropdown-wrapper").toggleClass("show");
+        if($(".subnav-1").hasClass("show")){
+          $(".subnav-1").removeClass("show")
+      }
+      if($(".subnav").hasClass("show")){
+        $(".subnav").removeClass("show")
+      }
     });
 
 //check local storage for the lang
