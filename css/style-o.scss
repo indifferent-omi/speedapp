@@ -627,7 +627,7 @@ p,span{
     visibility: hidden;
     pointer-events: none;
     transform: translateY(100%);
-    padding: 15px 30px 15px 60px;
+    padding: 5px 30px 5px 60px;
    
     div {
         // float: left;
@@ -644,12 +644,13 @@ p,span{
 
 .subnav{
     .subnav-content{
-        transform: translateY(18%);
+        justify-content: center;
+        transform: translateY(28%);
         @media(min-width:588px){
-            transform: translateY(30%);
+            transform: translateY(40%);
         }
         @media(min-width:853px){
-            transform: translateY(50%);
+            transform:  translateY(71%);
         }
     }
 }

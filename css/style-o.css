@@ -684,7 +684,7 @@ html #entete #bas #shortcut-icon {
   pointer-events: none;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  padding: 15px 30px 15px 60px;
+  padding: 5px 30px 5px 60px;
 }
 
 .subnav-content div, .subnav-content-1 div {
@@ -702,21 +702,24 @@ html #entete #bas #shortcut-icon {
 }
 
 .subnav .subnav-content {
-  -webkit-transform: translateY(18%);
-          transform: translateY(18%);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: translateY(28%);
+          transform: translateY(28%);
 }
 
 @media (min-width: 588px) {
   .subnav .subnav-content {
-    -webkit-transform: translateY(30%);
-            transform: translateY(30%);
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
   }
 }
 
 @media (min-width: 853px) {
   .subnav .subnav-content {
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
+    -webkit-transform: translateY(71%);
+            transform: translateY(71%);
   }
 }
 
