@@ -730,7 +730,7 @@ html #entete #bas #shortcut-icon {
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 799px) {
   .subnav .subnav-content {
     -webkit-transform: translateY(71%);
             transform: translateY(71%);
