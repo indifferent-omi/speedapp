@@ -36,33 +36,108 @@
   margin-left: 20px;
 }
 
-@media (max-width: 1360px) {
+@media (min-width: 320px) {
   #hautbas {
-    background-image: url(../img/design/download-mobile.png);
     background-repeat: repeat;
-    height: 140px;
-  }
-  #hautbas #haut {
-    border-bottom: 1px solid rgba(160, 160, 160, 0.28);
+    height: 80px;
+    background-position: 10px;
   }
 }
 
 @media (min-width: 1360px) {
   #hautbas {
-    height: 68px;
+    height: 80px;
+    background-repeat: repeat;
+  }
+}
+
+#hautbas #haut {
+  padding-right: 60px;
+}
+
+#hautbas #haut #logo_container {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+#hautbas #haut #navbarmenu {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
+}
+
+#hautbas #haut #navbar {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+#hautbas #haut .subnav-1 {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
+#hautbas #haut .o-button-group {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  min-width: 310px;
+}
+
+@media (min-width: 1000px) {
+  #hautbas #haut #logo_container {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #hautbas #haut #navbarmenu {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  #hautbas #haut #navbar, #hautbas #haut .subnav-1 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  #hautbas #haut .o-button-group {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media (max-width: 1069px) {
+  #hautbas #haut {
+    padding-right: 30px;
+  }
+  #hautbas #haut #logo_container, #hautbas #haut #navbar, #hautbas #haut #gn-menu {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
+  #hautbas #haut #navbar .btn-group {
+    width: 90px;
+  }
+}
+
+@media (max-width: 958px) {
+  #hautbas #haut {
+    padding-right: 30px;
+  }
+  #hautbas #haut #logo_container {
+    min-width: 150px;
+  }
+  #hautbas #haut #navbar .btn-group {
+    width: 90px;
   }
 }
 
 html #entete #haut {
-  height: 51px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-@media (min-width: 1170px) {
-  html #entete #haut {
-    height: 51px;
-  }
+  height: 35px;
+  top: 3px;
 }
 
 @media (min-width: 1360px) {
@@ -80,26 +155,8 @@ html #entete #bas {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 80px;
-}
-
-@media (min-width: 790px) {
-  html #entete #bas {
-    height: 80px;
-  }
-}
-
-@media (min-width: 1170px) {
-  html #entete #bas {
-    top: 60px;
-  }
-}
-
-@media (min-width: 1360px) {
-  html #entete #bas {
-    top: 35px;
-    height: 35px;
-  }
+  height: 35px;
+  top: 43px;
 }
 
 html #entete #bas #icontext {
@@ -201,10 +258,8 @@ html #entete #bas #shortcut-icon {
   background-size: 100% 102%;
 }
 
-@media (max-width: 1359px) {
-  .gn-menu-wrapper {
-    top: -100px;
-  }
+#toolbtnicon {
+  top: -40px;
 }
 
 .text-decoration-control select {
@@ -425,10 +480,23 @@ html #entete #bas #shortcut-icon {
 
 .position-select-box .select2-container--default .select2-selection--single .select2-selection__rendered {
   font-size: 14px;
+  color: #333;
+}
+
+.o-button-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 920px) {
+  .o-button-group {
+    margin-left: 20px;
+  }
 }
 
 .btn-group.prevpublish {
-  padding-right: 115px;
+  max-width: 140px;
 }
 
 .btn-group.prevpublish .btn-default {
@@ -438,9 +506,10 @@ html #entete #bas #shortcut-icon {
 }
 
 .btn-group.prevpublish #loginbtn {
-  height: 34px;
+  height: 30px;
   width: 48px;
   background-repeat: no-repeat;
+  background-position-y: -4px;
 }
 
 .dropdown-menu li a {
@@ -530,5 +599,156 @@ html #entete #bas #shortcut-icon {
 
 #swapp-palettes .tabbable.tabs-right .nav-tabs > li a:hover {
   text-decoration: none;
+}
+
+#iconwrapp .prevpublish a {
+  height: 30px;
+  margin-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#iconwrapp .prevpublish a i {
+  margin-right: 2px;
+}
+
+/* Subnav button */
+/* Add a red background color to navigation links on hover */
+.subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav {
+  overflow: hidden;
+}
+
+.subnav.show .subnav-content {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
+}
+
+.subnav-1 {
+  margin-left: auto;
+}
+
+.subnav-1.show .subnav-content-1 {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: visible;
+}
+
+.subnav-1 .navbar-toggler {
+  background: transparent !important;
+  color: #fff !important;
+  font-size: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+  padding-bottom: 0 !important;
+  margin-bottom: 6px;
+}
+
+.subnav-1 .subnav-content-1 {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.subnav-content, .subnav-content-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0 !important;
+  background-color: #272727;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  padding: 15px 30px 15px 60px;
+}
+
+.subnav-content div, .subnav-content-1 div {
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content .group-res.control-group, .subnav-content-1 .group-res.control-group {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.subnav .subnav-content {
+  -webkit-transform: translateY(18%);
+          transform: translateY(18%);
+}
+
+@media (min-width: 588px) {
+  .subnav .subnav-content {
+    -webkit-transform: translateY(30%);
+            transform: translateY(30%);
+  }
+}
+
+@media (min-width: 853px) {
+  .subnav .subnav-content {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+#icontext {
+  width: calc(100% - 120px);
+}
+
+#icontext .responsive-navigation {
+  width: 100%;
+}
+
+.navbar-toggler {
+  background: transparent !important;
+  color: #fff !important;
+  font-size: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-self: center;
+  padding-bottom: 18px;
+}
+
+.right_aside_control {
+  z-index: 88 !important;
+}
+
+#entete, #hautbas {
+  position: relative;
+  z-index: 100;
 }
 /*# sourceMappingURL=style-o.css.map */

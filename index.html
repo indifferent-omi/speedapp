@@ -198,18 +198,18 @@
 
       <header class="swapp-fixed">
         <div id="entete">
-          <div id="hautbas">
+          <div id="hautbas" class="wrapper-collapse-res-1" >
             <!-- Fixed navbar -->
-            <div id="haut">
-              <div id="logo_container">
+            <div id="haut" class="responsive-navigation">
+              <div id="logo_container" class="group-res-1">
                 <a id="logo" href="/">
                   <img alt="Speedwapp" src="./images/logo_1.png" />
                 </a>
                 <span id="beta" class="btn btn-warning btn-xs">Beta</span>
               </div>
-              <div id="navbarmenu" role="navigation">
+              <div id="navbarmenu" role="navigation" class="group-res-1">
                 <div id="gn-menu" class="gn-menu-main">
-                  <li id="toolsbtn" class="gn-trigger">
+                  <div id="toolsbtn" class="gn-trigger">
                     <div id="fp_gallery" class="fp_gallery">
                       <div id="fp_thumbContainer">
                         <div id="seachboxcpnt" style="display: none">
@@ -311,10 +311,101 @@
                         ></div>
                       </div>
                     </div>
-                  </li>
+                  </div>
                 </div>
               </div>
-              <div id="navbar" class="nav">
+              <div class="o-button-group group-res-1">
+                <div id="iconwrapp" >
+                  
+                  <div class="position-select-box">
+                    <select class="o-select">
+                      <option value="Static">Static</option>
+                      <option value="saab">Relative</option>
+                      <option value="mercedes">Absolute</option>
+                      <option value="audi">Fixed</option>
+                    </select>
+                  </div>
+  
+                  <div class="media-select-wrapper">
+                       <select class="media-select-original">
+                        <option value="desktop">fa fa-lg fa-desktop</option>
+                        <option value="tablet">fa fa-lg fa-laptop</option>
+                        <option value="tablet">fa fa-lg fa-tablet</option>
+                        <option value="tablet">fa fa-lg fa-mobile-phone</option>
+                      </select>
+                      <div class="media-select">
+                      <button class="btn-select" value=""></button>
+                          <div class="select-dropdown-wrapper">
+                            <ul></ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="btn-group prevpublish">
+                    <a
+                      href="#"
+                      id="playbtn"
+                      class="btn btn-default btn-sm"
+                      title="Preview"
+                      data-placement="bottom"
+                      data-toggle="tooltip"
+                    >
+                      <i class="fa fa-eye"></i> Preview</a
+                    >
+                    <a
+                      href="#"
+                      class="btn"
+                      id="loginbtn"
+                      title="Logout"
+                      data-placement="bottom"
+                      data-toggle="tooltip"
+                    ></a>
+                  </div>
+  
+                  <span
+                    id="exoport_to_pdf"
+                    class="fa-stack fa-lg"
+                    title="Export to pdf"
+                    data-placement="bottom"
+                    data-toggle="tooltip"
+                  >
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-file-pdf-o fa-stack-1x"></i>
+                  </span>
+                  <span
+                    id="exoport_to_jpg"
+                    class="fa-stack fa-lg"
+                    title="Export to jpg"
+                    data-placement="bottom"
+                    data-toggle="tooltip"
+                  >
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-file-image-o fa-stack-1x"></i>
+                  </span>
+  
+                  <span
+                    id="view_code"
+                    class="fa-stack fa-lg"
+                    title="Code Source"
+                    data-placement="bottom"
+                    data-toggle="tooltip"
+                  >
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-code fa-stack-1x"></i>
+                  </span>
+  
+                  <span
+                    id="btn-back-editor"
+                    class="fa-stack fa-lg"
+                    title="Exit preview mode"
+                    data-placement="bottom"
+                    data-toggle="tooltip"
+                  >
+                    <i class="fa fa-square-o fa-stack-2x"></i>
+                    <i class="fa fa-pencil fa-stack-1x"></i>
+                  </span>
+                </div>
+              </div>
+              <div id="navbar" class="nav group-res-1">
                 <!-- Single button -->
                 <div class="btn-group">
                   <span data-toggle="dropdown" class="navitem"
@@ -491,180 +582,15 @@
                     </li>
                   </ul>
                 </div>
+                
               </div>
-              <div id="iconwrapp">
-                <!-- <div
-                  id="position-mode"
-                  class="bfh-selectbox"
-                  data-name="positionmode"
-                >
-                  <input type="hidden" name="positionmode" value="static" />
-                  <a
-                    class="bfh-selectbox-toggle form-control"
-                    role="button"
-                    data-toggle="bfh-selectbox"
-                    href="#"
-                    ><span class="bfh-selectbox-option">Static</span
-                    ><span class="caret selectbox-caret"></span
-                  ></a>
-                  <div class="bfh-selectbox-options">
-                    <div role="listbox">
-                      <ul role="option">
-                        <li>
-                          <a tabindex="-1" href="#" data-option="static"
-                            >Static</a
-                          >
-                        </li>
-                        <li>
-                          <a tabindex="-1" href="#" data-option="relative"
-                            >Relative</a
-                          >
-                        </li>
-                        <li>
-                          <a tabindex="-1" href="#" data-option="absolute"
-                            >Absolute</a
-                          >
-                        </li>
-                        <li>
-                          <a tabindex="-1" href="#" data-option="fixed"
-                            >Fixed</a
-                          >
-                        </li>
-                      </ul>
-                    </div>
+              <div class="subnav-1">
+                <button class="navbar-toggler subnavbtn" type="button"  aria-controls="navbarSupportedContentLG" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa fa-bars"></i>
+                  </button>
+                  <div class="subnav-content-1">
                   </div>
-                </div> -->
-                <div class="position-select-box">
-                  <select class="o-select">
-                    <option value="Static">Static</option>
-                    <option value="saab">Relative</option>
-                    <option value="mercedes">Absolute</option>
-                    <option value="audi">Fixed</option>
-                  </select>
                 </div>
-
-                <div class="media-select-wrapper">
-                     <select class="media-select-original">
-                      <option value="desktop">fa fa-lg fa-desktop</option>
-                      <option value="tablet">fa fa-lg fa-laptop</option>
-                      <option value="tablet">fa fa-lg fa-tablet</option>
-                      <option value="tablet">fa fa-lg fa-mobile-phone</option>
-                    </select>
-                    <div class="media-select">
-                    <button class="btn-select" value=""></button>
-                        <div class="select-dropdown-wrapper">
-                          <ul></ul>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div
-                  id="wiewport-sizes-container"
-                  class="bfh-selectbox"
-                  data-original-title=""
-                  title=""
-                >
-                  <div id="viewport-size" class="bfh-selectbox">
-                    <input type="hidden" name="" value="full" /><a
-                      class="bfh-selectbox-toggle form-control"
-                      role="button"
-                      data-toggle="bfh-selectbox"
-                      href="#"
-                      ><span class="bfh-selectbox-option"
-                        ><i class="fa fa-lg fa-desktop"></i></span
-                      ><span class="caret selectbox-caret"></span
-                    ></a>
-                    <div class="bfh-selectbox-options">
-                      <div role="listbox">
-                        <ul role="option">
-                          <li>
-                            <a tabindex="-1" href="#" data-option="full"
-                              ><i class="fa fa-lg fa-desktop"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a tabindex="-1" href="#" data-option="laptop"
-                              ><i class="fa fa-lg fa-laptop"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a tabindex="-1" href="#" data-option="tablet"
-                              ><i class="fa fa-lg fa-tablet"></i
-                            ></a>
-                          </li>
-                          <li>
-                            <a tabindex="-1" href="#" data-option="phone"
-                              ><i class="fa fa-lg fa-mobile-phone"></i
-                            ></a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </div> -->
-                <div class="btn-group prevpublish">
-                  <a
-                    href="#"
-                    id="playbtn"
-                    class="btn btn-default btn-sm"
-                    title="Preview"
-                    data-placement="bottom"
-                    data-toggle="tooltip"
-                  >
-                    <i class="fa fa-eye"></i> Preview</a
-                  >
-                  <a
-                    href="#"
-                    class="btn"
-                    id="loginbtn"
-                    title="Logout"
-                    data-placement="bottom"
-                    data-toggle="tooltip"
-                  ></a>
-                </div>
-
-                <span
-                  id="exoport_to_pdf"
-                  class="fa-stack fa-lg"
-                  title="Export to pdf"
-                  data-placement="bottom"
-                  data-toggle="tooltip"
-                >
-                  <i class="fa fa-square-o fa-stack-2x"></i>
-                  <i class="fa fa-file-pdf-o fa-stack-1x"></i>
-                </span>
-                <span
-                  id="exoport_to_jpg"
-                  class="fa-stack fa-lg"
-                  title="Export to jpg"
-                  data-placement="bottom"
-                  data-toggle="tooltip"
-                >
-                  <i class="fa fa-square-o fa-stack-2x"></i>
-                  <i class="fa fa-file-image-o fa-stack-1x"></i>
-                </span>
-
-                <span
-                  id="view_code"
-                  class="fa-stack fa-lg"
-                  title="Code Source"
-                  data-placement="bottom"
-                  data-toggle="tooltip"
-                >
-                  <i class="fa fa-square-o fa-stack-2x"></i>
-                  <i class="fa fa-code fa-stack-1x"></i>
-                </span>
-
-                <span
-                  id="btn-back-editor"
-                  class="fa-stack fa-lg"
-                  title="Exit preview mode"
-                  data-placement="bottom"
-                  data-toggle="tooltip"
-                >
-                  <i class="fa fa-square-o fa-stack-2x"></i>
-                  <i class="fa fa-pencil fa-stack-1x"></i>
-                </span>
-              </div>
             </div>
 
             <div id="bas" class="inverted-widget">
@@ -692,9 +618,9 @@
                   </button>
                 </div>
               </div>
-              <div id="icontext">
-                <div class="body o-body">
-                  <div class="control-group">
+              <div id="icontext" class="wrapper-collapse-res">
+                <div class="body o-body responsive-navigation">
+                  <div class="group-res control-group">
                     <div class="font-picker-control-group">
                     <div class="controls font-picker-control">
                       <input type="text" id="font-picker">
@@ -724,7 +650,7 @@
                     </div>
                   </div>
                   </div>
-                  <div class="control-group">
+                  <div class="group-res control-group">
                     <div class="controls">
                       <div
                         class="bfh-numberunits"
@@ -774,7 +700,7 @@
                       </div>
                     </div>
                   </div>
-                 <div class="o-typo-weight">
+                 <div class="group-res o-typo-weight">
                   <div class="control-group">
                     <div class="controls" data-original-title="" title="">
                       <input
@@ -824,7 +750,7 @@
                     </div>
                   </div>
                  </div>
-                  <div class="control-group">
+                  <div class="group-res control-group">
                     <div class="controls">
                       <div
                         class="input-group header-color-picker"
@@ -848,7 +774,7 @@
                       </div> -->
                     </div>
                   </div>
-                  <div class="control-group">
+                  <div class="group-res control-group">
                     <div class="controls" data-original-title="" title="">
                       <div id="radio_align" class="ui-buttonset">
                         <label
@@ -895,7 +821,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="control-group">
+                  <div class="group-res control-group">
                     <div class="controls text-decoration-control" >
                       <select name="" id="" class="o-select-3">
                         <option value="fluid_body">None</option>
@@ -909,7 +835,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="control-group">
+                  <div class="group-res control-group">
                     <label class="deactivable-property">X </label>
                     <div class="controls">
                       <div
@@ -960,7 +886,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="control-group">
+                  <div class="group-res control-group">
                     <label class="deactivable-property">Y </label>
                     <div class="controls">
                       <div
@@ -1011,7 +937,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="control-group">
+                  <div class="group-res control-group">
                     <label class="deactivable-property">Width </label>
                     <div class="controls">
                       <div
@@ -1062,7 +988,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="control-group">
+                  <div class="group-res control-group">
                     <label class="deactivable-property">Height </label>
                     <div class="controls">
                       <div
@@ -1113,12 +1039,19 @@
                       </div>
                     </div>
                   </div>
-                  <div class="control-group">
+                  <div class="group-res control-group">
                     <label style="display: none">Block </label>
                     <div class="controls" data-original-title="" title="">
                       <span class="fa fa-cube fa-2x"></span>
                     </div>
                   </div>
+                  <div class="subnav">
+                    <button class="navbar-toggler subnavbtn" type="button"  aria-controls="navbarSupportedContentLG" aria-expanded="false" aria-label="Toggle navigation">
+                          ...
+                        </button>
+                        <div class="subnav-content">
+                        </div>
+                      </div>
                 </div>
               </div>
             </div>
@@ -2781,6 +2714,7 @@
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="./js/jquery.fontselect.min.js"></script>
     <!-- <script src="./js/bootstrap-formhelpers/bootstrap-formhelpers.min.js"></script> -->
+    <script src="./js/res.js"></script>
     <script src="./js/active.js"></script>
   </body>
 </html>
