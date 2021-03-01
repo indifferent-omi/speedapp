@@ -844,11 +844,28 @@ html #entete #bas #shortcut-icon {
   height: 100% !important;
 }
 
+#right_menu {
+  height: calc(100% - 100px) !important;
+  overflow: hidden;
+}
+
+.tabs-right ul.nav {
+  height: 101%;
+}
+
 .tabs-right > .tab-content {
   height: 100%;
 }
 
+.tabs-right > .tab-content .tab-pane {
+  height: 95%;
+}
+
+.tabs-right > .tab-content .tab-pane .container {
+  height: 100%;
+}
+
 .tabs-right > .tab-content .nano > .nano-content {
-  height: 100% !important;
+  height: calc(100% - 20px) !important;
 }
 /*# sourceMappingURL=style-o.css.map */
