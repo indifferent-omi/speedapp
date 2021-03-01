@@ -644,6 +644,9 @@ p,span{
   }
 
 .subnav{
+    .navbar-toggler{
+        width: fit-content!important;
+    }
     .subnav-content{
         justify-content: center;
         transform: translateY(28%);

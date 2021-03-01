@@ -700,6 +700,12 @@ html #entete #bas #shortcut-icon {
   margin-top: 5px;
 }
 
+.subnav .navbar-toggler {
+  width: -webkit-fit-content !important;
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
+
 .subnav .subnav-content {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
