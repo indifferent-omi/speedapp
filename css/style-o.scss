@@ -87,15 +87,18 @@
             order: 2;
             min-width: 310px;
         }
-        @media (min-width:1000px) {
+        @media (min-width:790px) {
             #logo_container{
                 order: 1;
             }
             #navbarmenu{
                 order: 3;
             }
-            #navbar,.subnav-1{
+            #navbar{
                 order: 2;
+            }
+            .subnav-1{
+                order: 4;
             }
             .o-button-group{
                 order: 3;
@@ -644,7 +647,7 @@ p,span{
 
 .subnav{
     .subnav-content{
-        justify-content: flex-end;
+        justify-content: center;
         transform: translateY(28%);
         @media(min-width:588px){
             transform: translateY(40%);

@@ -139,6 +139,23 @@ $(function() {
 
 
 
-$(".navbar-toggler").on("click",function(){
+$(".subnav .navbar-toggler").on("click",function(){
     $(this).parent().toggleClass("show");
+    if($(".subnav-1").hasClass("show")){
+        $(".subnav-1").removeClass("show")
+    }
+})
+$(".subnav-1 .navbar-toggler").on("click",function(){
+    $(this).parent().toggleClass("show");
+    if($(".subnav").hasClass("show")){
+        $(".subnav").removeClass("show")
+    }
+})
+
+
+window.addEventListener('click', function(e){
+    if (!document.getElementById('subnav-1').contains(e.target) && (!document.getElementById('subnav').contains(e.target))){
+     document.getElementById('subnav-1').classList.remove("show") //the same code you've used to hide the menu
+     document.getElementById('subnav').classList.remove("show") //the same code you've used to hide the menu
+  } 
 })

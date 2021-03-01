@@ -86,7 +86,7 @@
   min-width: 310px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 790px) {
   #hautbas #haut #logo_container {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -97,10 +97,15 @@
         -ms-flex-order: 3;
             order: 3;
   }
-  #hautbas #haut #navbar, #hautbas #haut .subnav-1 {
+  #hautbas #haut #navbar {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+  #hautbas #haut .subnav-1 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
   }
   #hautbas #haut .o-button-group {
     -webkit-box-ordinal-group: 4;
@@ -702,9 +707,9 @@ html #entete #bas #shortcut-icon {
 }
 
 .subnav .subnav-content {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-transform: translateY(28%);
           transform: translateY(28%);
 }
