@@ -616,7 +616,8 @@ p,span{
         align-items: center;
         justify-self: center;
         padding-bottom: 0!important;
-        margin-bottom: 6px;;
+        margin-bottom: 6px;
+        
       }
       .subnav-content-1{
         transform: translateY(0);
@@ -652,6 +653,8 @@ p,span{
 .subnav{
     .navbar-toggler{
         width: fit-content!important;
+        font-size: 20px;
+        padding-bottom:2px;
     }
     .subnav-content{
         justify-content: center;
@@ -710,12 +713,22 @@ p,span{
 
 .font-picker-control{
     .fs-search{
+        padding: 0;
+        border: 0;
+        height: 30px;
         input{
-            width: 100%;
+            width: calc(100% + 2px);
             // background: url("../img/design/right-input.png")!important;
+            background-image: none;
+            background-color: #1e1f1e;
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            box-shadow: none;
+            border: 0;
+            margin-left: -1px;
+            height: 100%;
+            border-radius: 0;
         }
     }
     .fs-results{
@@ -723,12 +736,45 @@ p,span{
        li{
            color: #494d49;
            &.active{
-               background: #cc060a;
+            //    background: #cc060a;
+            background: #c5c5c5;
            }
         &:hover{
-            // background: #c5c5c5;
-            background: #cc060a;
+            background: #c5c5c5;
+            // background: #cc060a;
         }
        }
+    }
+}
+
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background: #c5c5c5;
+    color: #494d49;
+}
+
+.text-decoration-control select {
+    option:checked,
+    option:hover {
+        background: #c5c5c5;
+        color: #494d49;
+    }
+}
+
+
+// left Pannel
+
+#fp_thumbContainer {
+    height: 100%!important;
+    top: 0;
+    #fp_thumbScroller{
+        height: calc(100% - 50px);
+    }
+    .selectorcontainer .container{
+        height: 100%;
+        padding-bottom: 50px;
+        >div{
+            height: 100%!important;
+        }
     }
 }

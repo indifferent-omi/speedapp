@@ -711,6 +711,8 @@ html #entete #bas #shortcut-icon {
   width: -webkit-fit-content !important;
   width: -moz-fit-content !important;
   width: fit-content !important;
+  font-size: 20px;
+  padding-bottom: 2px;
 }
 
 .subnav .subnav-content {
@@ -776,11 +778,25 @@ html #entete #bas #shortcut-icon {
   width: calc(100% - 50px);
 }
 
+.font-picker-control .fs-search {
+  padding: 0;
+  border: 0;
+  height: 30px;
+}
+
 .font-picker-control .fs-search input {
-  width: 100%;
+  width: calc(100% + 2px);
+  background-image: none;
+  background-color: #1e1f1e;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0;
+  margin-left: -1px;
+  height: 100%;
+  border-radius: 0;
 }
 
 .font-picker-control .fs-results {
@@ -792,10 +808,39 @@ html #entete #bas #shortcut-icon {
 }
 
 .font-picker-control .fs-results li.active {
-  background: #cc060a;
+  background: #c5c5c5;
 }
 
 .font-picker-control .fs-results li:hover {
-  background: #cc060a;
+  background: #c5c5c5;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background: #c5c5c5;
+  color: #494d49;
+}
+
+.text-decoration-control select option:checked,
+.text-decoration-control select option:hover {
+  background: #c5c5c5;
+  color: #494d49;
+}
+
+#fp_thumbContainer {
+  height: 100% !important;
+  top: 0;
+}
+
+#fp_thumbContainer #fp_thumbScroller {
+  height: calc(100% - 50px);
+}
+
+#fp_thumbContainer .selectorcontainer .container {
+  height: 100%;
+  padding-bottom: 50px;
+}
+
+#fp_thumbContainer .selectorcontainer .container > div {
+  height: 100% !important;
 }
 /*# sourceMappingURL=style-o.css.map */
