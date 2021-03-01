@@ -154,8 +154,12 @@ $(".subnav-1 .navbar-toggler").on("click",function(){
 
 
 window.addEventListener('click', function(e){
-    if (!document.getElementById('subnav-1').contains(e.target) && (!document.getElementById('subnav').contains(e.target))){
+    if (!document.getElementById('subnav-1').contains(e.target) && (!document.getElementById('subnav').contains(e.target)) && !document.getElementById('device-select').contains(e.target)){
      document.getElementById('subnav-1').classList.remove("show") //the same code you've used to hide the menu
      document.getElementById('subnav').classList.remove("show") //the same code you've used to hide the menu
+     document.getElementById('device-select-inner').classList.remove("show") //the same code you've used to hide the menu
+     document.getElementById('device-select-inner').style.display ="none" //the same code you've used to hide the menu
   } 
 })
+
+

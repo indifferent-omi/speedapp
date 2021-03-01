@@ -76,6 +76,8 @@
         }
         #navbarmenu{
             order: 5;
+            z-index: 999;
+            position: relative;
         }
         #navbar{
             order: 3;
@@ -685,3 +687,5 @@ p,span{
     position: relative;
     z-index: 100;
 }
+
+

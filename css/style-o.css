@@ -65,6 +65,8 @@
   -webkit-box-ordinal-group: 6;
       -ms-flex-order: 5;
           order: 5;
+  z-index: 999;
+  position: relative;
 }
 
 #hautbas #haut #navbar {
