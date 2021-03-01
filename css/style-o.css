@@ -93,19 +93,19 @@
             order: 1;
   }
   #hautbas #haut #navbarmenu {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
-  }
-  #hautbas #haut #navbar, #hautbas #haut .subnav-1 {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
   }
-  #hautbas #haut .o-button-group {
+  #hautbas #haut #navbar, #hautbas #haut .subnav-1 {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+  }
+  #hautbas #haut .o-button-group {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
   }
 }
 
