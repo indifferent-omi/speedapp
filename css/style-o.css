@@ -764,4 +764,27 @@ html #entete #bas #shortcut-icon {
   z-index: 999;
   position: relative;
 }
+
+.btn-group.prevpublish #playbtn {
+  width: calc(100% - 50px);
+}
+
+.font-picker-control .fs-search input {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.font-picker-control .fs-results {
+  background: #e8e8e8;
+}
+
+.font-picker-control .fs-results li {
+  color: #494d49;
+}
+
+.font-picker-control .fs-results li:hover {
+  background: #c5c5c5;
+}
 /*# sourceMappingURL=style-o.css.map */

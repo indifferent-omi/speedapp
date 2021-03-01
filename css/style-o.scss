@@ -693,3 +693,32 @@ p,span{
     z-index: 999;
     position: relative;
 }
+
+
+.btn-group.prevpublish{
+    // padding-right: 30px;
+    #playbtn {
+        width: calc(100% - 50px);
+    }
+}
+
+.font-picker-control{
+    .fs-search{
+        input{
+            width: 100%;
+            // background: url("../img/design/right-input.png")!important;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+    .fs-results{
+        background: #e8e8e8;
+       li{
+           color: #494d49;
+        &:hover{
+            background: #c5c5c5;
+        }
+       }
+    }
+}
